@@ -7,7 +7,7 @@
 
 
 This project aims to manage the level of trash in each container placed all over the cities. The data coming from distance sensores installed in each container is used to manage the existing trash rgarding a zone, city or even bigger place. This information is transformed and offered in dashboard to the end-user supporting the decision making. 
-It also try to optimize the routes carried out by trucks to collect trush by giving smart routes avoiding them to do useless extra miles in places where the container is empty. We can save costs and time and ultimately save our planet as well.
+It also try to optimize the routes carried out by trucks to collect trush by giving smart routes avoiding them to do useless extra miles in places. We can save costs and time and ultimately save our planet as well.
 
 
 

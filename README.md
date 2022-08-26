@@ -3,21 +3,10 @@
 
 :articulated_lorry: Sistema de monitorização de pontos de recolha de residuos :articulated_lorry:
 
-<img title="Logotipo" alt="Logo" src="Documentacao/Imagens/Logo1.png" width="450">
-
 ## **Descrição**
 
 
 Este projeto tem como objetivo desenvolver uma aplicação que seja capaz de gerir e monitorizar contentores de uma empresa de residuos, para isso serão utilizados sensores que façam o controlo de fluxo dentro do contentor, registando em tempo real o estado do contentor(vazio, intermedio e cheio), facilitando assim a forma como as rotas serão realizadas. Por exemplo: apenas faz sentido fazer parte da rota contentores que estejam cheios.
-
-
-Toda a documentação está
-disponivel [aqui](https://gitlab.estg.ipp.pt/lds_2021/trash_talker_group_7/tree/master/Documentacao)
-
-
-<div align="center"><h2>Vídeo de Apresentação</h2><a name="video" id="video"> </a> </div>
-
-![](https://gitlab.estg.ipp.pt/lds_2021/trash_talker_group_7/raw/master/VideoApresenta%C3%A7%C3%A3o.mp4)
 
 
 ## **Como Iniciar o Projeto?**

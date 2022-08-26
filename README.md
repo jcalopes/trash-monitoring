@@ -1,45 +1,38 @@
 # TrashTalker
 
 
-:articulated_lorry: Sistema de monitorização de pontos de recolha de residuos :articulated_lorry:
+:articulated_lorry: Trash Monitoring System   :articulated_lorry:
 
-## **Descrição**
-
-
-Este projeto tem como objetivo desenvolver uma aplicação que seja capaz de gerir e monitorizar contentores de uma empresa de residuos, para isso serão utilizados sensores que façam o controlo de fluxo dentro do contentor, registando em tempo real o estado do contentor(vazio, intermedio e cheio), facilitando assim a forma como as rotas serão realizadas. Por exemplo: apenas faz sentido fazer parte da rota contentores que estejam cheios.
+## **Description**
 
 
-## **Como Iniciar o Projeto?**
+This project aims to manage the level of trash in each container placed all over the cities. The data coming from distance sensores installed in each container is used to manage the existing trash rgarding a zone, city or even bigger place. This information is transformed and offered in dashboard to the end-user supporting the decision making. 
+It also try to optimize the routes carried out by trucks to collect trush by giving smart routes avoiding them to do useless extra miles in places where the container is empty. We can save costs and time and ultimately save our planet as well.
 
-Para iniciar o projeto devem ser seguidos os seguintes passos:  
-1. Verificar que a connection string utilizada no projeto (Backend/TrashTalker/appSettings.Development.json) é:  
+
+
+## **How to configure**
+
+To execute properly the project you need perfomr the following steps:
+1. Check the connection string used at (Backend/TrashTalker/appSettings.Development.json):  
     `"DBConnection": "Server=localhost;Database=trashTalker;User=sa;Password=MyPass@word"`
-2. Criar um docker container com a imagem de SQL que esteja em conformidade com a connection string:  
+2. Start a container with mysql image with the folowing properties:  
     `docker run -e "ACCEPT_EULA=1" -e "MSSQL_SA_PASSWORD=MyPass@word" -e "MSSQL_USER=sa" -p 1433:1433 -d --name=sql mcr.microsoft.com/mssql/server:2019-latest`
-3. Iniciar o container: `docker start sql`
-4. Iniciar o backend: `dotnet build` e `dotnet run`
-5. Instalar dependências e iniciar o frontend: `npm install` e deseguida `npm start`
+3. Override the credentials placed at config.cs. Probably you will have to configured some account regarding Arduino Cloud, Google API and so forth.
+4. Start the container: `docker start sql`
+5. Start backend project: `dotnet build` e `dotnet run`. Here you need to have installed .NET.
+6. Install dependencies and start frontedn application: `npm install` e deseguida `npm start`
   
 
-## **Ferramentas**
+## **Tech Stack**
+
+* **Angular** - Frontend Framework.
+* **.NET** - Backedn Framework.
+* **SQL** - SQL Databses,
+* **Arduino IOT Cloud** - Cloud Service provided by Arduino to manage IOT Devices.
 
 
-* **GitLab** – Controlo de versões, definição e distribuição das tarefas atribuídas aos elementos da equipa
-* **Microsoft Teams** – Plataforma de comunicação dos elementos da equipa
-* **Zoom** - Plataforma de comunicação dos elementos da equipa
-
-
-## **Tecnologias**
-
-
-* **Angular** - Framework para lado do cliente
-* **Android** - Sistema operativo utilizado pelo cliente no dispositvo mobile
-* **.NET** - Plataforma de desenvolvimento da WEB API
-* **SQL** - Base de dados relacional utilizada para o armazenamento dos dados
-* **Arduino IOT Cloud** - Serviço IoT da cloud utilizado para comunicação com os sensores
-
-
-## **Equipa**
+## **Team**
 
 
 * João Lopes
